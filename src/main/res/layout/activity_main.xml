@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardUseCompatPadding="true"
+    android:elevation="5dp">
+
+<LinearLayout
+    
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLinear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="16dp"
+    android:paddingTop="32dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:layout_marginBottom="16dp">
+
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/addtocart"
+        android:layout_gravity="center_vertical"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cabbage"
+            android:textSize="16dp"
+            android:fontFamily="sans-serif-condensed"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/unitPriceTV"
+            android:text="\u20B91000"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:layout_marginTop="4dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/delete"/>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <kankan.wheel.widget.WheelView
+            android:layout_gravity="center"
+            android:id="@+id/productQuantitywheel1"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+
+            android:textSize="14dp"/>
+        <kankan.wheel.widget.WheelView
+            android:id="@+id/productQuantitywheel2"
+            android:layout_gravity="center"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:textAlignment="center"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="\u20B9999999"
+        android:id="@+id/FinalPriceTV"
+        android:textSize="14sp"
+        />
+
+    
+</LinearLayout>
+</android.support.v7.widget.CardView>
